@@ -1,3 +1,7 @@
+<body>
+
+  hi
+  
 <?php
 
   echo "special :)"
@@ -10,3 +14,5 @@ $text = file_get_contents($file);
 file_put_contents($file, $text);
 
 ?>
+
+</body>
