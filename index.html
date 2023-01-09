@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DHLV | Home</title>
+    <script src="./pireps.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/886253700362944552/1060056153222041712/AEA53ACB-EFDB-47AB-8136-18559FEC25E3.png">
     <style>
@@ -20,7 +21,14 @@
             min-height: 75%;
         }
 
-        #pwdBy, #Copyright, #notice {
+        #textInput {
+            border-radius: 15px;
+            border: 1px solid black;
+            padding: 20px;
+            border-color: black;
+        }
+
+        #pwdBy, #Copyright {
             font-size: 10px;
         }
 
@@ -29,13 +37,16 @@
 <body>
     <div class="w3-top">
         <div class="w3-row w3-padding w3-black">
-            <div class="w3-col s4">
-                <a href="/" class="w3-button w3-block w3-black">HOME</a>
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">HOME</a>
             </div>
-            <div class="w3-col s4">
-                <a href="/crewcenter.html" class="w3-button w3-block w3-black">CREWCENTER</a>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
             </div>
-            <div class="w3-col s4">
+            <div class="w3-col s3">
+                <a href="#crewcenter" class="w3-button w3-block w3-black">CREWCENTER</a>
+            </div>
+            <div class="w3-col s3">
                 <a href="https://community.infiniteflight.com/t/dhl-express-virtual-simply-delivering-excellence-official-2022-23-thread/680452" class="w3-button w3-block w3-black">IFC</a>
             </div>
 
@@ -55,12 +66,27 @@
                 </h5>
 
                 <p>DHL Express Virtual is a unique Virtual Airline approved by the IFVARB that offers more than 120,000 routes in the real world. We only have about 800 routes currently, but routes are constantly being added so we should have plenty more routes as time goes on. Our fleet consists of over 250+ different types of aircraft and we fly all over the world! To see what aircraft we have currently on Infinite Flight, you can view our fleet page on our website or here on the thread. Since our approval on November 10th, 2021 we have been striving to make DHL Express Virtual the best experience for our pilots, staff, and future applicants.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="w3-sand w3-grayscale w3-large">
+        <div class="w3-container" id="crewcenter">
+            <div class="w3-content" style="max-width: 700px">
                 <h5 class="w3-center w3-padding-64">
                     <span class="w3-tag w3-wide">CREWCENTER</span>
                 </h5>
 
-                <p>DHL Express Virtual has a custom designed AirTable CrewCenter by DHLV's Executive Council. In order to file a PIREP you can head over to our <a href="/crewcenter.html">PIREPs Page.</a></p>
+                <p>DHL Express Virtual has a custom designed AirTable CrewCenter by DHLV's Executive Council. In order to file a PIREP you can enter the password to view the CrewCenter below.</p>
+
+                <div align="center">
+                    <label>Enter password below</label><br>
+                    <input class="w3-button" id="textInput" type="password"><br>
+                    <button class="w3-button w3-green" onclick="textInput ()">Submit</button>
+                    <p id="p1"></p>
+                    <p id="p2"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -68,7 +94,6 @@
     <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
         <p id="pwdBy">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
         <p id="Copyright">© Copyright 2022 DHL Express Virtual</p>
-        <p id="notice">DHL Express Virtual is a virtual airline exclusively for the Infinite Flight platform. We have no affiliation with DHL Express or any subsidiary. All DHL Express trademarks (including logos and icons) referenced or displayed on this site remain the property of DHL Express.</p>
     </footer>
 
 </body>
